@@ -1,0 +1,43 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+@theme static {
+  --font-sans: "Public Sans", sans-serif;
+  /* 內建 */
+  --color-green-50: #effdf5;
+  --color-green-100: #d9fbe8;
+  --color-green-200: #b3f5d1;
+  --color-green-300: #75edae;
+  --color-green-400: #00dc82;
+  --color-green-500: #00c16a;
+  --color-green-600: #00a155;
+  --color-green-700: #007f45;
+  --color-green-800: #016538;
+  --color-green-900: #0a5331;
+  --color-green-950: #052e16;
+
+  /* 自訂色 */
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-text: #333333;
+  --color-menu: #555555;
+  --color-sub: #b0b0b0;
+  --color-yellow: #f0af07;
+  --color-green: #67c23a;
+
+  --color-pink: #fd00b5;
+  --color-green: #29b008;
+  --color-brown: #51453b;
+  --color-brown-50: #f4e9e3;
+  --color-brown-100: #bd9582;
+  --color-brown-200: #c09961;
+  --color-brown-300: #756659;
+  --color-red: #ff6767;
+  --color-red-50: #ffe5e5;
+  --color-red-100: #ffbdbd;
+  --color-red-200: #ff8a8a;
+  --color-blue: #008ffd;
+  --color-blue-50: #67c5ff;
+  --color-blue-100: #3399ff;
+  --color-blue-200: #0066cc;
+}
