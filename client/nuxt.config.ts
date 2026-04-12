@@ -6,8 +6,19 @@ export default defineNuxtConfig({
   devtools: {
     enabled: true,
   },
-  css: ["~/assets/css/main.css", "animate.css/animate.min.css"],
-
+  css: [
+    "~/assets/css/main.css",
+    "animate.css/animate.min.css",
+    "katex/dist/katex.min.css",
+  ],
+  icon: {
+    customCollections: [
+      {
+        prefix: "custom",
+        dir: "./app/assets/icons",
+      },
+    ],
+  },
   routeRules: {
     "/": { prerender: true },
   },
@@ -24,6 +35,6 @@ export default defineNuxtConfig({
   },
 
   runtimeConfig: {
-    apiBase: process.env.API_BASE || "http://localhost:3001",
+    apiBase: process.env.API_BASE || "http://localhost:3000",
   },
 });
