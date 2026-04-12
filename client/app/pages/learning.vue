@@ -1,17 +1,17 @@
 <script setup>
-const vocabulary = ref();
-const config = useRuntimeConfig();
-const { data, error } = await useFetch(
-  `${config.public.apiBase}/api/vocabulary`
-);
-if (data.value) {
-  console.log(data.value);
+// const vocabulary = ref();
+// const config = useRuntimeConfig();
+// const { data, error } = await useFetch(
+//   `${config.public.apiBase}/api/vocabulary`
+// );
+// if (data.value) {
+//   console.log(data.value);
 
-  // vocabulary.value = data.value;
-}
-if (error.value) {
-  console.error("API Error:", err);
-}
+//   // vocabulary.value = data.value;
+// }
+// if (error.value) {
+//   console.error("API Error:", err);
+// }
 </script>
 <template>
   <div class="flex flex-col gap-4 p-4">
