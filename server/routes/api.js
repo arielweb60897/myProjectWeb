@@ -10,13 +10,13 @@ const products = [
   { id: 5, name: "焦糖瑪奇朵", price: 180 },
 ];
 const vocabulary = [
-  { id: 1, word: "探る", pinin: "さぐる", mean: "探索" },
-  { id: 2, word: "浮かれる", pinin: "うかれる", mean: "開心得意" },
-  { id: 3, word: "浮つく", pinin: "うわつく", mean: "心浮氣躁" },
-  { id: 4, word: "調子をこく", pinin: "ちょうしをこく", mean: "得意忘形" },
-  { id: 5, word: "眼福", pinin: "がんぷく", mean: "眼福" },
+  { id: 1, word: "探る", romaji: "さぐる", mean: "探索" },
+  { id: 2, word: "浮かれる", romaji: "うかれる", mean: "開心得意" },
+  { id: 3, word: "浮つく", romaji: "うわつく", mean: "心浮氣躁" },
+  { id: 4, word: "調子をこく", romaji: "ちょうしをこく", mean: "得意忘形" },
+  { id: 5, word: "眼福", romaji: "がんぷく", mean: "眼福" },
 ];
-router.get("/vocabulary", function (req, res) {
+router.post("/vocabulary", function (req, res) {
   console.log("GET vocabulary 被呼叫"); // 🔹 加 log
   res.json({ success: true, data: vocabulary });
 });
