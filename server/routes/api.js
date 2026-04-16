@@ -1,7 +1,6 @@
 var express = require("express");
 var router = express.Router();
-
-// 假資料
+console.log("api router loaded");
 const products = [
   { id: 1, name: "美式咖啡", price: 90 },
   { id: 2, name: "拿鐵咖啡", price: 120 },
@@ -16,7 +15,10 @@ const vocabulary = [
   { id: 4, word: "調子をこく", romaji: "ちょうしをこく", mean: "得意忘形" },
   { id: 5, word: "眼福", romaji: "がんぷく", mean: "眼福" },
 ];
-router.post("/vocabulary", function (req, res) {
+// router.post("/vocabulary", (req, res) => {
+//   res.send("POST vocabulary OK");
+// });
+router.get("/vocabulary", function (req, res) {
   console.log("GET vocabulary 被呼叫"); // 🔹 加 log
   res.json({ success: true, data: vocabulary });
 });
@@ -28,13 +30,13 @@ router.get("/products", function (req, res) {
 });
 
 // POST /api/products
-router.post("/products", function (req, res) {
-  console.log("POST /products 被呼叫", req.body); // 🔹 加 log
-  const newProduct = req.body;
-  newProduct.id = products.length + 1;
-  products.push(newProduct);
-  res.status(201).json({ success: true, data: newProduct });
-});
+// router.post("/products", function (req, res) {
+//   console.log("POST /products 被呼叫", req.body); // 🔹 加 log
+//   const newProduct = req.body;
+//   newProduct.id = products.length + 1;
+//   products.push(newProduct);
+//   res.status(201).json({ success: true, data: newProduct });
+// });
 //
 
 module.exports = router;
