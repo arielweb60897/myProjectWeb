@@ -6,12 +6,12 @@ services:
 
     environment:
       MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: flashcard
+      MYSQL_DATABASE: vocabulary
       MYSQL_USER: nestuser
       MYSQL_PASSWORD: nestpass
 
     ports:
-      - '3306:3306'
+      - '3307:3306'
 
     volumes:
       - mysql_data:/var/lib/mysql
